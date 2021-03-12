@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+/* ------------------------- */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+* {
+	outline: none;
+}
+/* ------------------------- */
+
+body {
+	background: url("img/background.png");
+	padding: 20px 200px;
+}
+
+h1 {
+	font: bold 40px 'Merriweather', serif;
+	margin-top: 0;
+}
+
+#portfolio a {
+	display: inline-block;
+	width: 30%;
+	height: 400px;
+	overflow: hidden;
+	border: 5px solid #dcdfcd;
+	box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.4);
+	margin: 0 2% 20px 0;
+}
+#portfolio img {
+	max-width: 100%;
+}
+
+.source_link {
+	color: #98C3D1;
+}
+
+@media screen and (max-width: 1360px) {
+	#portfolio a {
+		width: 29%;
+		height: 250px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	body {
+		padding: 20px 10%;
+	}
+	#portfolio a {
+		width: 28%;
+		height: 180px;
+	}
+}
+@media screen and (max-width: 480px) {
+	#portfolio a {
+		width: 27%;
+		height: 120px;
+	}
+}
+@media screen and (max-width: 375px) {
+	#portfolio a {
+		width: 43%;
+	}
+}
